@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Login</title>
+        <script src="index.js"></script>
+        <link rel="stylesheet" href="/css/login.css">
+    </head>
+    <body>
+        <div class="login">
+            <div class="box">
+                <h1><span class="span"></span>Login</h1>
+                <form action="/login" method="post">
+
+                    <div class="input_box">
+                        <input type="text" name="name" id="name" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" name="password" id="password" required>
+                        <label>Password</label>
+                    </div>
+                    <button type="submit">Login</button>
+                    <p class="signuplink">Don't have an account <a href="/">Signup</a></p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

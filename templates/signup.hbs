@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Signup</title>
+        <script src="index.js"></script>
+        <link rel="stylesheet" href="css/signup.css">
+    </head>
+    <body>
+        <div class="sign">
+            
+            <div class="box">
+                <h1><span class="span"></span>Signup</h1>
+                <form action="/" method="post">
+
+                    <div class="input_box">
+                        <input type="text" name="name" id="name" required >
+                        <label>Username</label>
+                    </div>
+                    <div class="input_box">
+                        <input type="email" name="email" id="email" required>
+                        <label>Email Id</label>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" name="password" id="password" required>
+                        <label>Create Password</label>
+                    </div>
+                    <div class="input_box">
+                        <input type="password" name="confirm_password" id="confirm_password" required>
+                        <label>Confirm Password</label>
+                    </div>
+                    {{#if msg}}
+                    <p></p>
+                    {{/if}} 
+                    <p class="terms">By creating an account, I agree to<a href="#"> Terms and Conditions</a></p>
+                    <button type="submit">Signup</button>
+                    <p class="loginlink">Already have an account <a href="/login">Login</a></p>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
